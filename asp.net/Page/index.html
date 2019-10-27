@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Form demo</title>
+  <link rel="stylesheet" href="http://localhost:49758/Content/mystyle.css">
+</head>
+
+
+<body>
+  <hr>
+  <form method="POST" action="http://localhost:49758/Page/Here">
+    <p>
+      <br>
+      <div class="tooltip">ID
+        <span class="tooltiptext">Your ID please ...</span>
+      </div> <input name="idtxt" type="number" tooltip="id number" required />
+    </p>
+    <p>NAME <input name="nametxt" type="text" placeholder="YOUR NAME" required /></p>
+    <p>EMAIL <input name="emailtxt" type="email" required /></p>
+    <p>PASSWORD <input name="pwd" type="password" /></p>
+    <p>BIRTH DATE <input name="bdate" type="date"></p>
+    <p>
+      GENDER: <br>
+      <input type="radio" name="gender" value="male"> Male<br>
+      <input type="radio" name="gender" value="female"> Female<br>
+      <input type="radio" name="gender" value="other"> Other<br>
+      <br>Country: <select name="country">
+        <option value="Israel">Israel</option>
+        <option value="USA">USA</option>
+        <option value="Canada">Canada</option>
+        <option value="France">France</option>
+      </select><br><br>
+      <input type="checkbox" name="vegetarian" value="veggy">Vegetarian?<br>
+
+    </p>
+    <button type="submit">SEND</button>
+  </form>
+  <!-- file:///C:/itay/2310_forms/index.html?idtxt=1&nametxt=2&pwd=3123123123123&bdate=2019-10-11&gender=male
+  -->
+</body>
+
+</html>
